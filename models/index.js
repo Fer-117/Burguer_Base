@@ -1,10 +1,12 @@
-const Category = require('./models/Category');
-const Ingredients = require('./models/Ingredients');
-const Suppliers = require('./models/Suppliers');
+const Category = require('./Category');
+const Ingredients = require('./Ingredients');
+const Suppliers = require('./Suppliers');
+const  UserAdmin = require ('./UserAdmin');
+// const UserWaiter = require ('./UserWaiter'); // //use later//
 
-// Define the one-to-many relationship between Ingredients and Category
-Ingredients.belongsTo(Category, { foreignKey: 'category_id' });
-Category.hasMany(Ingredients, { foreignKey: 'category_id' });
+// Define the many-to-many relationship between Ingredients and Category
+Category.belongsToMany(Ingredients, { through: 'CategoryIngredients', foreignKey: 'category_id' });
+Ingredients.belongsToMany(Category, { through: 'CategoryIngredients', foreignKey: 'ingredient_id' });
 
 // Define the one-to-many relationship between Suppliers and Category
 Suppliers.hasMany(Category, { foreignKey: 'supplier_id' });
@@ -15,4 +17,5 @@ module.exports = {
   Category,
   Ingredients,
   Suppliers,
+  UserAdmin,
 };

@@ -1,0 +1,52 @@
+<!-- Inventory graphs start here  -->
+<section class="section">
+  <div class="container">
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+  </div>
+</section>
+<!-- Inventory graphs will end here  -->
+
+<!-- Menu start here -->
+<section class="section">
+  <div class="container">
+    <h2 class="title">Menu</h2>
+    <form id="orderForm" action="">
+      <div class="columns is-multiline">
+        {{#each hamburgers}}
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="{{this.photo}}" alt="{{this.burger_name}}">
+                </figure>
+              </div>
+              <div class="card-content">
+                <h3 class="title is-4">{{this.burger_name}}</h3>
+                <p>{{this.description}}</p>
+                <div class="field">
+                  <input
+                    class="input"
+                    type="number"
+                    min="0"
+                    name="{{this.burger_name}}"
+                    placeholder="Burgers"
+                    data-index="{{@index}}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      <!-- submit btn -->
+      <div class="field has-text-centered" style="margin-top: 1rem;">
+        <button class="button is-primary" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- Menu end here -->
+
+<script src="public/js/logout.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="public/js/menu.js"></script>

@@ -1,0 +1,112 @@
+  /* Inventory section */
+  #inventory {
+    text-align: center;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  #inventory h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5585b5;
+  }
+
+  #invGraph {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #333;
+  }
+
+  /* Menu section */
+  #menu {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #bbe4e9;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  #menu h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5585b5;
+  }
+
+  #orderForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .Burger input[type=number] {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #333;
+  }
+
+  .Burger input[type=number]:focus {
+    outline: none;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .menu-item img {
+    width: 280px;
+    height: 250px;
+    margin-right: 20px;
+  }
+
+  .menu-item .burger-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-item h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+
+  .menu-item p {
+    margin: 0 0 20px 0;
+    color: #777;
+  }
+
+  .menu-item input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #333;
+  }
+
+  /*
